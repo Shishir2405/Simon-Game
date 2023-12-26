@@ -1,0 +1,118 @@
+body {
+    text-align: center;
+    height: 100vh;
+    background-color: aliceblue;
+    font-family: "Poppins";
+  }
+  .press {
+    height: 12.5rem;
+    width: 12.5rem;
+    border-radius: 50%;
+    margin: 1.5rem;
+  }
+  .red {
+    background-color: rgb(255, 34, 34);
+    border: 0.35rem solid rgb(201, 12, 12);
+  }
+  .yellow {
+    background-color: rgb(255, 255, 56);
+    border: 0.35rem solid rgb(243, 205, 13);
+  }
+  .green {
+    background-color: rgb(26, 189, 26);
+    border: 0.35rem solid darkgreen;
+  }
+  .blue {
+    background-color: rgb(32, 32, 239);
+    border: 0.35rem solid navy;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .flash {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 15px 10px 8px rgba(0, 0, 0, 0.4);
+  }
+  .userInput {
+    background-color: rgb(66, 251, 66);
+    transform: scale(1.05);
+    box-shadow: 15px 10px 8px rgba(0, 0, 0, 0.4);
+  }
+  .center {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid black;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.571);
+    font-size: 20px;
+    font-weight: 700;
+  }
+  @keyframes shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    25%,
+    75% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+  }
+  
+  .failedAnimation {
+    animation: shake 0.7s ease-in-out;
+  }
+  
+  li {
+    margin: 20px;
+    font-weight: 500;
+  }
+  
+  li::marker {
+    content: "🔹";
+    font-size: 25px;
+  }
+  .instruction {
+    height: 100vh;
+  }
+  
+  .instruction button {
+    margin-top: 15px;
+    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 10px 20px -3px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 16px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    padding: 14px 18px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .main {
+    height: 100vh;
+  }
+  

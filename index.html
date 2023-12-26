@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,300;0,500;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,700,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="instruction">
+      <h1>INSTRUCTION</h1>
+      <ul class="list">
+        <li>Click the "Start" button to initiate the game.</li>
+        <li>
+          Simon will illuminate a sequence of colors. Pay close attention to the
+          order of the colors.
+        </li>
+        <li>
+          Your turn! Click on the colored buttons in the exact order as shown by
+          Simon.
+        </li>
+        <li>
+          Each correct sequence advances you to the next level, adding more
+          challenge and fun.
+        </li>
+        <li>
+          Don't forget to listen! Simon plays a sound when game start and
+          provide a visual cues.
+        </li>
+        <li>
+          Challenge yourself to reach higher levels and beat your own high
+          score!
+        </li>
+        <li>
+          If you make a mistake, the game ends, and you can press "Start" to
+          restart.
+        </li>
+        <li>
+          Enjoy the rhythmic patterns and improve your memory and concentration
+          skills.
+        </li>
+        <li>
+          Ready to test your memory? Press "Start" and let the Simon Game begin!
+        </li>
+      </ul>
+      <button class="remove">Remove Instruction</button>
+    </div>
+    <div class="main">
+      <h1>Simon Game</h1>
+      <h2>Press Start To Begin The Game</h2>
+      <div class="container">
+        <div class="lineone">
+          <div class="press red" id="red"></div>
+          <div class="press yellow" id="yellow"></div>
+        </div>
+        <div class="center">Start</div>
+        <div class="linetwo">
+          <div class="press green" id="green"></div>
+          <div class="press blue" id="blue"></div>
+        </div>
+      </div>
+      <!-- Audio Elements are added to play audio -->
+      <!-- Start Audio -->
+      <audio src="level-complete-mobile-game-app-locran-1-00-06.mp3" class="audioStart"></audio>
+      <!-- End Audio -->
+      <audio
+        src="game-over-retro-arcade-epic-stock-media-1-00-02.mp3"
+        class="audioEnd"
+      ></audio>
+
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
