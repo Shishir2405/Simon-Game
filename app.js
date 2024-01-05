@@ -122,6 +122,7 @@ function checkAns(idx) {
     //audio for game completion will play
     audioFailed();
     failed();
+    reload();
   }
 }
 
@@ -165,3 +166,9 @@ removeBtn.addEventListener("click", function () {
   removeInstruction.remove();
 });
 
+//reload after fail
+function reload() {
+  setTimeout(() => {
+    location.reload(true);
+  }, 4000);
+}
